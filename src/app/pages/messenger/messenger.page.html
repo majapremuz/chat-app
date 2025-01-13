@@ -1,0 +1,27 @@
+<ion-content [fullscreen]="true">
+  <div class="messager">
+    <div class="chat">
+      <div *ngFor="let message of messages; trackBy: trackById">
+        <div class="yourMessage" *ngIf="message.sender === 'you'">
+          {{ message.text }}
+        </div>
+        <div class="herMessage" *ngIf="message.sender !== 'you'">
+          {{ message.text }}
+        </div>
+      </div>    
+    </div>
+
+    <form (ngSubmit)="sendMessage()">
+      <input
+        [(ngModel)]="newMessage"
+        name="newMessage"
+        placeholder="Type a message..."
+        required
+      />
+
+      <ion-button expand="block" class="sendBtn" type="submit">
+        <ion-icon name="send"></ion-icon>
+      </ion-button>
+    </form>
+  </div>
+</ion-content>
