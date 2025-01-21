@@ -35,8 +35,8 @@ export class HomePage {
     this.translate['test_string'] = await this.dataCtrl.translateWord("TEST.STRING");
   }
 
-  openMessenger() {
-    this.router.navigateByUrl('/messenger');
+  openRegisterPage(){
+    this.router.navigateByUrl('/register');
   }
 
 }

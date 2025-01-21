@@ -1,0 +1,48 @@
+<ion-content [fullscreen]="true">
+
+  <div class="conteiner">
+    <ion-title size="large">
+      <h1>Register</h1>
+      <p>Create your new account</p>
+    </ion-title>
+
+      <form (submit)="register()">
+        <label for="name"></label>
+        <input type="text" [(ngModel)]="name" name="name" id="name" placeholder="name">
+
+        <label for="email"></label>
+        <input type="email" [(ngModel)]="email" name="email" id="email" placeholder="example@gmail.com">
+        
+        <label for="password"></label>
+        <input type="password" [(ngModel)]="password" name="password" id="password" placeholder=".....">
+        
+        <button type="submit" class="registerBtn">Register</button>
+
+      </form>
+
+      <div class="forget">
+
+        <div class="checkbox">
+          <label for="checkbox" class="remember">Remember me</label>
+        <input type="radio">
+        </div>
+        
+
+        <p class="forgotPassword">Forgot password?</p>
+      </div>
+
+      <div class="socials">
+        <h2>Or continue with</h2>
+
+        <div class="images">
+
+          <ion-icon name="logo-facebook"></ion-icon>
+          <ion-icon name="logo-google" (click)="loginWithGoogle()"></ion-icon> 
+          <ion-icon name="logo-instagram"></ion-icon>
+          <ion-icon name="logo-twitter"></ion-icon>
+
+        </div>
+      </div>
+  </div>
+
+</ion-content>

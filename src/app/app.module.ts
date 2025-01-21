@@ -15,6 +15,10 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
 import { IonicStorageModule } from '@ionic/storage-angular';
 
+import { AngularFireAuthModule } from '@angular/fire/compat/auth';
+import { AngularFireModule } from '@angular/fire/compat';
+import { firebaseConfig } from 'src/environments/environment';
+
 @NgModule({
   declarations: [AppComponent],
   imports: [
@@ -30,6 +34,8 @@ import { IonicStorageModule } from '@ionic/storage-angular';
         deps: [HttpClient],
       },
     }),
+    AngularFireModule.initializeApp(firebaseConfig.firebase || firebaseConfig),
+    AngularFireAuthModule
   ],
   providers: [ 
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },

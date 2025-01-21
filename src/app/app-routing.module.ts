@@ -17,6 +17,14 @@ const routes: Routes = [
     path: 'messenger',
     loadChildren: () => import('./pages/messenger/messenger.module').then( m => m.MessengerPageModule)
   },
+  {
+    path: 'contacts',
+    loadChildren: () => import('./pages/contacts/contacts.module').then( m => m.ContactsPageModule)
+  },
+  {
+    path: 'register',
+    loadChildren: () => import('./pages/register/register.module').then( m => m.RegisterPageModule)
+  },
 ];
 
 @NgModule({

@@ -1,11 +1,15 @@
-<ion-content [fullscreen]="true">
+<ion-content>
+  <div class="conteiner">
 
-    <div class="users" (click)="openMessenger()">
-      <img src="assets/icon/favicon.png" alt="profile pic">
-      <span>
-        <h1>Maja</h1>
-        <p>message</p>
-      </span> 
+    <div class="title">
+      <h1>Prolink</h1>
     </div>
-  
+
+    <div class="buttons">
+
+      <button class="signInBtn">Sign In</button>
+      <button class="signUpBtn" (click)="openRegisterPage()">Create account</button>
+    </div>
+     
+  </div>
 </ion-content>

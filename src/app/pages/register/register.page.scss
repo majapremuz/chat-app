@@ -1,0 +1,82 @@
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 900;
+    margin: 3rem;
+    color: #f3831d;
+}
+
+p {
+    text-align: center;
+    color: rgb(146, 144, 144);
+}
+
+.conteiner, form, .forget {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+input {
+    width: 80%;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border-radius: 10px;
+    background-color: rgb(146, 144, 144);
+}
+
+input::placeholder {
+    color: rgb(255, 255, 255);
+}
+
+.registerBtn {
+    width: 80%;
+    margin: 0.5rem 0;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: #f3831d;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.forget{
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 2rem 0;
+}
+
+.checkbox, .images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    word-break: none;
+}
+
+h2 {
+    text-align: center;
+}
+
+.remember {
+    font-size: 0.8rem;
+    font-weight: 900;
+    word-break: keep-all;
+}
+
+.forgotPassword {
+    font-size: 0.8rem;
+    font-weight: 900;
+    word-break: keep-all;
+    color: black;
+    margin: 1rem;
+}
+
+ion-icon {
+    font-size: 2rem;
+    border: 1px solid #f3831d;
+    padding: 1rem;
+    border-radius: 50%;
+    margin: 0 0.5rem;
+}
